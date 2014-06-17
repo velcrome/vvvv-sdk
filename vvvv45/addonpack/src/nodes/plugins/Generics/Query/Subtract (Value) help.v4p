@@ -1,0 +1,273 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="C:\dev\vvvv\Space\plugins\LinqNodes\Subtract (Value) help.v4p" systemname="Minus (Sets) help" filename="C:\dev\vvvv\vvvv-Sets\Minus (Sets) help.v4p">
+   <BOUNDS type="Window" left="15240" top="0" width="13560" height="15480">
+   </BOUNDS>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="696" top="1188" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="696" top="1188" width="1476" height="2628">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="7" values="Monday,Tuesday,Wednesday,Thursday,Frühdaý,토요일,воскресенье">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="3096" top="1092" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3096" top="1092" width="1476" height="2628">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="4" values="Monday,Tuesday,воскресенье,Saturday">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Subtract">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="4">
+   <BOUNDS type="Node" left="612" top="5880" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="612" top="5880" width="1476" height="2628">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="4" visible="1" values=",,,,,,">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InABox" id="6">
+   <BOUNDS type="Node" left="10641" top="2061" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10641" top="2061" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17268" top="6756" width="5016" height="4080">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12189" top="1101" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12189" top="1101" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Log Messages|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Log Messages">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2280" top="5928" width="828" height="2628">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2280" top="5928" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Former Slice|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="4" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
+   <BOUNDS type="Node" left="7308" top="1008" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7308" top="1008" width="1476" height="2628">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Subtract">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="-0.22,1,2,5.98">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
+   <BOUNDS type="Node" left="5292" top="1332" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5292" top="1332" width="1476" height="2628">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="7" values="6,0,1,2,3,4,5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="4704" top="5832" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4704" top="5832" width="1476" height="2628">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="1,2">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6420" top="5832" width="828" height="2628">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6420" top="5832" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Former Slice|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="2,3">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <NODE systemname="Union (String)" filename="LINQ.csproj" nodename="Union (String)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="1605" top="4635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Other" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Former Slice" visible="1">
+   </PIN>
+   <PIN pinname="Former Other Slice" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="18" dstpinname="Other">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="4" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Former Slice" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3390" top="5913" width="828" height="2628">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3390" top="5913" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Former Slice|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="4" values="0,0,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Former Other Slice" dstnodeid="20" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Subtract (Value)" filename="LINQ.csproj" nodename="Subtract (Value)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="5796" top="4404" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Other" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Former Slice" visible="1">
+   </PIN>
+   <PIN pinname="Former Other Slice" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Former Slice" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Other">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>
